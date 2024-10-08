@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajesOne.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #6ab04c;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #23cc4d;
+            padding: 5px;
+            text-align: left;
+        }
+
+        nav a {
+            margin: 0;
+            color: #f1eded;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        /* Para que las secciones ocupen el ancho completo */
+        .section-1,
+        .section-2,
+        .section-3 {
+            width: 100%;
+            /* Ahora ocupa el 100% del ancho */
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Sombras para resaltar */
+            border: 3px solid transparent;
+            /* Borde general */
+            box-sizing: border-box;
+            /* Asegura que el padding y borde no se sumen al ancho */
+        }
+
+        /* Estilos específicos para cada sección */
+        .section-1 {
+            background-color: #fff9c4;
+            /* Color de fondo similar */
+            border-color: #fbc02d;
+            /* Borde específico */
+        }
+
+        .section-2 {
+            background-color: #f1f8e9;
+            border-color: #aed581;
+        }
+
+        .section-3 {
+            background-color: #e3f2fd;
+            border-color: #64b5f6;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        /* Opiniones de Clientes - Ocupar todo el ancho */
+        .opiniones {
+            width: 100%;
+            /* Ocupa todo el ancho de la página */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            background-color: #bebcbc;
+            /* Color de fondo para diferenciarla */
+            border: 3px solid #ddd;
+            /* Un borde suave */
+            box-sizing: border-box;
+            /* Asegura que padding y border se incluyan en el ancho */
+            margin-bottom: 20px;
+        }
+
+        /* Alineación de las opiniones individuales */
+        .opinion {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            /* Espacio entre imagen y texto */
+            margin-bottom: 15px;
+        }
+
+        .opinion img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .opinion p {
+            margin: 0;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        ViajesOne.com
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Casas Rurales</a>
+        <a href="#">Camping</a>
+        <a href="#">Hoteles</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="section-1">
+            <h2>CASAS RURALES</h2>
+            <p><strong>Finca Ecológica</strong> con 13 hectáreas, cercada con muros de piedra. Te ofrecemos alojarte en
+                un bosque de castaños y alcornoques centenarios...</p>
+        </div>
+
+        <div class="section-2">
+            <h2>CAMPING</h2>
+            <p><strong>Parcelas</strong> de 70 m² a 140 m², con electricidad, agua y desagüe. Bungalow totalmente
+                equipado, piscina, parque infantil, zona deportiva...</p>
+        </div>
+
+        <div class="section-3">
+            <h2>HOTELES</h2>
+            <p><strong>Gran Hotel Lir</strong>, situado en el corazón del distrito comercial de la ciudad, es ideal para
+                viajes de negocios...</p>
+        </div>
+
+        <div class="opiniones">
+            <h2>Opiniones de Clientes</h2>
+            <div class="opinion">
+                <img src="star.png" alt="Rating 5 estrellas">
+                <p>Siempre dan una respuesta, una solución, sin tiempo de espera, y con un trato amigable. Excelente
+                    servicio.</p>
+            </div>
+            <div class="opinion">
+                <img src="star.png" alt="Rating 4 estrellas">
+                <p>Estoy muy satisfecho con sus servicios y alojamientos ofrecidos.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Recuerde colocar las imagenes y terminar el ejercicio numero 13
+    </footer>
+
+</body>
+
+</html>
